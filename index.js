@@ -1,12 +1,12 @@
 function load_images(){
     virus_image = new Image;
-    virus_image.src = "./Assets/v1.png";
+    virus_image.src = "./Images/virus.png";
 
     player_image = new Image;
-    player_image.src = "./Assets/superhero.png";
+    player_image.src = "./Images/superhero.png";
 
     gem_image = new Image;
-    gem_image.src = "./Assets/gemm.png";
+    gem_image.src = "./Images/gem.png";
 }
 
 // Dom tree traversal to find an elment
@@ -74,12 +74,10 @@ function init(){
 
     // create event listner
     canvas.addEventListener('mousedown', function(){
-        console.log('you pressed the mouse')
         player.moving = true;
     })
 
     canvas.addEventListener('mouseup', function(){
-        console.log('you released the mouse')
         player.moving = false;
     })
 }
